@@ -1,0 +1,40 @@
+Testing Points
+version 3.0
+
+Input[0]:
+TEST
+Testing Point #0: 1+1
+Correct! Answer is 2
+
+Testing Point #1: -(-2)
+Correct! Answer is 2
+
+Testing Point #2: 1-(-2)
+Correct! Answer is 3
+
+Testing Point #3: (-2)*(-4)
+Correct! Answer is 8
+
+Testing Point #4: (2)
+Correct! Answer is 2
+
+Testing Point #5: (3.14 - 3) / (2+1/2)
+Correct! Answer is 0.056
+
+Testing Point #6: -3*-3
+Correct! Answer is 9
+
+Testing Point #7: (x-1)*(x+3)|x=2
+Correct! Answer is 5
+
+Testing Point #8: (x1+1)*(x2+1)|x1=-2,x2=-4
+Correct! Answer is 3
+
+Testing Point #9: (x1+1)*(x2+1)|x1=-2,x2=3.14159
+Correct! Answer is -4.14159
+
+Testing Point #10: 2*(-x+2*y)|y=2,x=2
+Correct! Answer is 4
+
+Total Testing Point: 11
+Correct Testing Point: 11

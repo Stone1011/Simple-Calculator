@@ -1,0 +1,132 @@
+*EXAMPLES*
+
+#Part0 - Arithmetics
+TEST
+=>
+Testing Points ... ...
+Explicit references in "EXAMPLES - Arithmetics.txt"
+
+
+#Part1 - Symbols Management
+NEW a 3
+1 2 3
+=>
+a:=[1, 2, 3]
+
+NEW b 4
+2 3 4 5
+=>
+b:=[2, 3, 4, 5]
+
+NEWPOLY f 2
+2 -1 5.5
+=>
+f(x):=2-1x+5.5x^2
+
+NEWPOLY g 3
+0 2 3 4
+=>
+g(x):=+2x+3x^2+4x^3
+
+DELETE b
+=>
+Symbol "b" is deleted.
+
+SHOW f
+=>
+f(x)=2-1x+5.5x^2
+
+SHOWALL
+=>
+a=[1, 2, 3]
+f(x)=2-1x+5.5x^2
+g(x)=+2x+3x^2+4x^3
+
+#Part2 - Vectors
+ADD a a
+=>
+[2, 4, 6]
+
+ADD a a b
+=>
+b:=[2, 4, 6]
+
+SUB b a c
+=>
+c:=[1, 2, 3]
+
+COS c c
+=>
+Cos <c, c> = 1
+
+#Part3 - Polynomials
+ADDPOLY f g
+=>
+2+1x+8.5x^2+4x^3
+
+ADDPOLY f g h
+=>
+h:=2+1x+8.5x^2+4x^3
+
+SUBPOLY f h m
+=>
+m:=-2x-3x^2-4x^3
+
+SUBPOLY m m
+=>
+0
+
+MULTI m m
+=>
++4x^2+12x^3+25x^4+24x^5+16x^6
+
+MULTI h m n
+=>
+n:=-4x-8x^2-28x^3-37.5x^4-46x^5-16x^6
+
+DSOLVE n 1
+=>
+-4-16x-84x^2-150x^3-230x^4-96x^5
+
+DSOLVE n 4 n4
+=>
+n4:=-900-5520x-5760x^2
+
+#Part4 - Abnormal Situations
+NEW a 3
+1
+=>
+a:=[1, 1, 1]
+
+NEWPOLY a 2
+0 2 3
+=>
+ERROR: Redefined symbol "a"
+
+ADD a b
+=>
+ERROR: Undefined symbol "b"
+
+SUB a a a
+=>
+ERROR: Redefined symbol "a"
+[0, 0, 0]
+
+DELETE a
+DELETE a
+=>
+ERROR: Undefined symbol "a"
+
+NEWPOLY f 2
+-1 2 3
+Dsolve f 2
+=>
+ERROR: Undefined command "Dsolve"
+
+DSOLVE f -1
+=>
+ERROR: Undefined derivative degree (-1)
+
+QUIT
+=>
+OK. Quitting...
