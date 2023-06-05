@@ -2,6 +2,24 @@
 
 ## By SHI Yifan
 
+## **[Summary]**
+
+This is a project for a simple calculator, version 3.0. It is created by SHI Yifan.
+
+The main contents of the project include the following:
+
+1. **Menu**: Users can choose between using a chain or sequence structure for data storage. They need to enter the code name of their preferred mode (1 or 2).
+2. **General Rules**: Valid commands should be entered in a single line, consisting of a valid command head and several parameters. Spaces are required between parameters, and without spaces, the parameters will be considered as a whole. If there are extra parameters, the system will ignore them. In the "NEW" command, the definition of a vector should always be on the next line.
+3. **Arithmetic Rules**: Valid arithmetic calculations should be done in a single line. Normal arithmetic calculations follow the same priority and syntax as Python. Users are advised to use natural expression methods to avoid mistakes. Assigning a value to a variable should be followed by '|' at the end of the expression. The value of a variable should be an instant value.
+4. **Function Rules**: The "LET" command is used to assign a function expression. For example, LET f(x,y_)=x+y_. The "CLEAR" command is used to clear a function definition and remove it from the database. A valid function starts with '_' or numbers or alphabets. To calculate the function, it can be used naturally. For example, f(2)*3+g(f(2)).
+5. **Linear Algebra**: The "NEWMAT" command is used to assign a matrix. For example, NEWMAT mat 2 3. The "DELMAT" command is used to delete a matrix definition and remove it from the database. A valid matrix definition should exactly match the m*n with the arguments of the "NEWMAT" command. The "DET" command is used to calculate the determinant value of a SQUARE matrix. For example, DET mat1. The "ADDMAT", "SUBMAT", and "MULTIMAT" commands are used to calculate matrix arithmetic.
+6. **Vector Commands**: Includes vector operations and polynomial operations.
+   - Vector Operations (Part1): Create a new vector with a dimension of dim and name it "vectorName". Input the numbers (integers or float numbers) in a single line. Delete a vector called "vectorName" and free the storage space. Show a vector called "vectorName". Perform addition operation between same-dimension vectors "vector1" and "vector2", optionally saving the result as "value". Perform subtraction operation between same-dimension vectors "vector1" and "vector2", optionally saving the result as "value". Solve the cosine value of the intersection angle of two same-dimension vectors "vector1" and "vector2".
+   - Polynomial Operations (Part2): Create a polynomial called "polyName" with a highest degree of deg. Input the coefficient of each term in a single line, from the zero degree to the highest one. Show the polynomial called "polyName". Add two polynomials called "poly1" and "poly2", optionally saving the result as "poly3". Subtract two polynomials called "poly1" and "poly2", optionally saving the result as "poly3". Multiply two polynomials called "poly1" and "poly2", optionally saving the result as "poly3". Solve the nth derivative of the polynomial called "poly", optionally saving the result as "value".
+7. **General Commands**: Show all the elements in storage, view the testing points of the arithmetic system, and quit the calculator system.
+
+---
+
 ## Instructions
 
 ### *MENU*
